@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tileEventTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="00:00"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tileEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:gravity="start"
+        android:text="name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/tileEventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="subject"
+        android:textSize="14sp"
+        android:gravity="start"/>
+
+    <TextView
+        android:id="@+id/tileEventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="location"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.FirebaseTestActivity">
+
+    <Button
+        android:id="@+id/firebasetest_addGroup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddGroupClick"
+        android:text="Test Add Group"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_loadGroup_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_loadGroup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLoadGroupClick"
+        android:text="Test Load Group"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_addGroup_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_loadAllGroups_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_loadAllGroups_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLoadAllGroupsClick"
+        android:text="Test Load All Groups"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_loadGroup_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_deleteGroup_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_deleteGroup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDeleteGroupClick"
+        android:text="Test Delete Group"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_loadAllGroups_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_updateGroup_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_updateGroup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onUpdateGroupClick"
+        android:text="Test Update Group"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_deleteGroup_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_addGroupMember_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_addGroupMember_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddGroupMemberClick"
+        android:text="Test Add Group Member"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_updateGroup_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_addUser_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_addUser_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddUserClick"
+        android:text="Test Add User"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_addGroupMember_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_loadUser_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_loadUser_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLoadUserClick"
+        android:text="Test Load User"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_addUser_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_deleteUser_button"/>
+
+    <Button
+        android:id="@+id/firebasetest_deleteUser_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDeleteUserClick"
+        android:text="Test Delete User"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_loadUser_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firebasetest_textGroup_button"/>
+
+    <TextView
+        android:id="@+id/firebasetest_textGroup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase Test"
+        app:layout_constraintTop_toBottomOf="@+id/firebasetest_updateGroup_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

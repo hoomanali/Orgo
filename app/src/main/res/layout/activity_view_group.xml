@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ViewGroupActivity"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/viewGroupActivity_groupName_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group name: "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/viewGroupActivity_groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Group name"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupName_TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupDescription_TextView"/>
+
+    <TextView
+        android:id="@+id/viewGroupActivity_groupDescription_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group Description: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupDescription"/>
+    <TextView
+        android:id="@+id/viewGroupActivity_groupDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Group Description"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupDescription_TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupAdmins_TextView"/>
+
+    <TextView
+        android:id="@+id/viewGroupActivity_groupAdmins_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group Admins: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupAdmins"/>
+    <TextView
+        android:id="@+id/viewGroupActivity_groupAdmins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Group Admins"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupAdmins_TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupCreator_TextView"/>
+
+    <TextView
+        android:id="@+id/viewGroupActivity_groupCreator_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group Creator: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupAdmins"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupCreator"/>
+    <TextView
+        android:id="@+id/viewGroupActivity_groupCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Group Creator"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupCreator_TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupMembers_TextView"/>
+
+    <TextView
+        android:id="@+id/viewGroupActivity_groupMembers_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group Members: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupCreator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupMembers"/>
+    <TextView
+        android:id="@+id/viewGroupActivity_groupMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Group Members"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupMembers_TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_PrivateFlag_TextView"/>
+
+    <TextView
+        android:id="@+id/viewGroupActivity_PrivateFlag_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private Group: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupMembers"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_groupPrivateFlag"/>
+    <TextView
+        android:id="@+id/viewGroupActivity_groupPrivateFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Private Group"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_PrivateFlag_TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGroupActivity_updateButton"/>
+
+    <Button
+        android:id="@+id/viewGroupActivity_updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroupActivity_groupPrivateFlag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/homeButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

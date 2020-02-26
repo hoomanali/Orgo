@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Orgo</string>
+    <string name="addGroupTitle">Create Group</string>
+    <string name="groupNameTitle">Group Name:</string>
+    <string name="groupDescriptionTitle">Description of Group:</string>
+    <string name="emailsOfAdminTitle">Add admins(emails in comma separated list):</string>
+    <string name="emailsOfMemberTitle">Add members(emails in comma separated list):</string>
+    <string name="privateGroupTitle">Make Group Private:</string>
+    <string name="saveGroup">Save</string>
+    <string name="title_home">Home</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_events">Events</string>
+    <string name="title_discover">Discover</string>
+</resources>

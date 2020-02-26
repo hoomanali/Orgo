@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tileGroupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="00:00"
+            android:visibility="gone"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tileGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:gravity="start"
+            android:text="name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tileGroupMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:textSize="14sp"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/tileGroupMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="member"
+            android:textSize="12sp" />
+</LinearLayout>
